@@ -1,0 +1,36 @@
+body {
+  font-family: sans-serif;
+  display: block;
+  width: 100%;
+  text-align: center;
+  min-height: 100vh;
+  margin: auto;
+  background: #f0f0f0;
+}
+
+h1 {
+  color: #333;
+}
+
+section#content {
+  margin: 20px auto;
+  width: 300px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+}
+.row {
+  display: flex;
+  flex-direction: row;  
+  align-items: stretch;
+  
+}
+
+.row div {
+  border: 1px solid #000;
+  align-items: stretch;
+  display: inline-block;
+  height: 99px;
+  width: 99px;
+}
