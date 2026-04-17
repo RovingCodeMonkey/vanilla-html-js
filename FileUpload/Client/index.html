@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Upload</title>
+  <script type="module">
+    import { downloadZip } from 'https://cdn.jsdelivr.net/npm/client-zip/+esm';
+    window.downloadZip = downloadZip;
+  </script>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <h1>File Upload</h1>
+  <section id="content">
+    <div id="dropZone">
+      <p>Drag &amp; drop files here</p>
+      <p>or</p>
+      <button id="chooseButton">Choose Files</button>
+      <input type="file" id="fileInput" multiple>
+    </div>
+    <ul id="fileList"></ul>
+    <div>
+        <button id="uploadButton" class="uploadButton" disabled>Upload</button>
+    </div>
+    <div>
+        <button id="zipAndChunkButton" class="uploadButton" disabled>Upload Zipped & Chunked</button>
+    </div>
+    <div id="status"></div>
+  </section>
+  <script src="index.js"></script>
+</body>
+</html>
